@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joyeux Anniversaire</title>
+  <link href="https://fonts.cdnfonts.com/css/star-wars" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-image: url("image/background.jpeg");
+      background-size: cover;
+      background-position: center;
+      color: #880e4f;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+        font-family: 'Star Wars', Arial Black, sans-serif;
+        font-size: 3em;
+      margin-top: 50px;
+      text-shadow: 5px 5px 5px black;
+      padding: 10px;
+      display: inline-block;
+    }
+
+    p {
+        font-family: 'Star Wars', Arial Black, sans-serif;
+        font-size: 2.5em;
+        font-weight: bold;
+        margin: 0 auto;
+        max-width: 90%;
+        padding: 40px 10px 10px;
+      
+        background: linear-gradient(
+          135deg,
+          #ffffff 0%,
+          #e0e0e0 25%,
+          #a0a0a0 50%,
+          #888888 75%,
+          #ffffff 100%
+        );
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+      
+        text-shadow:
+          0 0 5px silver(0, 0, 0, 0.7),
+          2px 2px 4px rgba(0, 0, 0, 0.9);
+      
+        animation: shimmer 3s infinite linear;
+      }
+      .starwars-text {
+        font-family: 'Star Wars', Arial Black, sans-serif;
+  font-size: 4em;
+}
+
+.silver {
+    font-family: 'Star Wars', Arial Black, sans-serif;
+    font-size: 2.5em;
+  text-transform: uppercase;
+  /* styles dégradés + text-shadow comme vu avant */
+}
+      /* Animation de lumière "shimmer" */
+      @keyframes shimmer {
+        0% {
+          background-position: -200% center;
+        }
+        100% {
+          background-position: 200% center;
+        }
+      }
+      
+      p {
+        background-size: 400% 100%;
+      }
+
+ 
+
+    img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+
+    @keyframes zoom {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+    }
+
+    .starwars-text {
+      font-family: 'Star Wars', sans-serif;
+      font-size: 2.5em;
+      color: black;
+      text-shadow:
+        -2px -2px 0 #FFDE06,
+        2px -2px 0 #FFDE06,
+        -2px 2px 0 #FFDE06,
+        2px 2px 0 #FFDE06,
+        0 0 5px #FFDE06;
+    }
+
+
+    .zoom-3x {
+      animation: zoom 1.0s ease-in-out 3;
+    }
+
+    /* Responsive text sizing */
+    @media (min-width: 768px) {
+      h1.starwars-text {
+        font-size: 4em;
+      }
+
+      p {
+        font-family: 'Star Wars', sans-serif;
+        font-size: 3.5em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1.starwars-text {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 2em;
+        padding-top: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="starwars-text zoom-3x">Bon Anniversaire GAB</h1>
+  <div class="starwars">
+    <img class="vador" src="image/vador.png" alt="Vador">
+    <img class="c3po" src="image/c3po.png" alt="C3PO">
+    <p class="silver">que la force soit avec toi</p>
+  </div>
+</body>
+</html>
